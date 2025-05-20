@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RiderCount Dataset</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">RiderCount</div>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#abstract">Abstract</a></li>
+                <li><a href="#methodology">Methodology</a></li>
+                <li><a href="#dataset">Dataset</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#benchmarks">Benchmarks</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#citation">Citation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>RiderCount</h1>
+            <p class="subtitle">A Dataset for Passenger Counting in the Upper-Decker of a Double-Decker Bus in Hong Kong
+            </p>
+        </div>
+    </header>
+
+    <section id="overview" class="container section">
+        <h2>Overview</h2>
+        <div class="paper-info">
+            <div class="paper-details">
+                <h3>RiderCount: Passenger Counting in Double-Decker Buses</h3>
+                <p class="authors">Authors: [Author Names]</p>
+                <p class="conference">arXiv 2023</p>
+                <div class="paper-links">
+                    <a href="https://arxiv.org/pdf/2410.11400" class="button" target="_blank"><i
+                            class="fas fa-file-pdf"></i> Paper</a>
+                    <a href="#" class="button"><i class="fas fa-download"></i> Dataset</a>
+                    <a href="#" class="button"><i class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+            <div class="paper-image">
+                <img src="images/teaser.png" alt="Example of RiderCount dataset">
+            </div>
+        </div>
+    </section>
+
+    <section id="abstract" class="container section">
+        <h2>Abstract</h2>
+        <p>This dataset supports research on passenger counting in the upper-decker of double-decker buses in Hong Kong.
+            It provides annotated data to develop and evaluate computer vision algorithms for accurate passenger
+            counting in public transportation systems.</p>
+    </section>
+
+    <section id="methodology" class="container section">
+        <h2>Methodology</h2>
+        <div class="methodology-content">
+            <div class="methodology-text">
+                <h3>Data Collection</h3>
+                <p>The RiderCount dataset was collected using cameras installed in the upper deck of double-decker buses
+                    operating on various routes in Hong Kong. Data was captured across different times of day, weather
+                    conditions, and passenger densities to ensure diversity.</p>
+
+                <h3>Annotation Process</h3>
+                <p>Each frame was carefully annotated by human annotators who marked the position of each passenger. The
+                    annotations were then verified through a quality assurance process to ensure accuracy.</p>
+
+                <h3>Privacy Considerations</h3>
+                <p>To protect passenger privacy, all faces and identifying features have been blurred or processed using
+                    privacy-preserving techniques in accordance with ethical guidelines for public transportation data
+                    collection.</p>
+            </div>
+            <div class="methodology-image">
+                <img src="images/methodology.png" alt="Data collection and annotation process">
+            </div>
+        </div>
+    </section>
+
+    <section id="dataset" class="container section">
+        <h2>Dataset</h2>
+        <div class="dataset-info">
+            <div class="dataset-stats">
+                <div class="stat-box">
+                    <h3>Images</h3>
+                    <p class="stat-number">XX,XXX</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Videos</h3>
+                    <p class="stat-number">XXX</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Annotations</h3>
+                    <p class="stat-number">XX,XXX</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Scenarios</h3>
+                    <p class="stat-number">XX</p>
+                </div>
+            </div>
+
+            <h3>Dataset Features</h3>
+            <ul class="feature-list">
+                <li><strong>Real-world conditions</strong>: Captured in actual double-decker buses in Hong Kong</li>
+                <li><strong>Diverse scenarios</strong>: Various lighting conditions, passenger densities, and seating
+                    arrangements</li>
+                <li><strong>Comprehensive annotations</strong>: Includes passenger positions and counts</li>
+                <li><strong>Privacy-preserving</strong>: Processed to protect passenger identity</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="examples" class="container section">
+        <h2>Examples</h2>
+        <div class="examples-grid">
+            <div class="example">
+                <img src="images/example1.png" alt="Example 1">
+                <p>Low occupancy scenario</p>
+            </div>
+            <div class="example">
+                <img src="images/example2.png" alt="Example 2">
+                <p>Medium occupancy scenario</p>
+            </div>
+            <div class="example">
+                <img src="images/example3.png" alt="Example 3">
+                <p>High occupancy scenario</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="benchmarks" class="container section">
+        <h2>Benchmarks</h2>
+        <p>We provide baseline results using several state-of-the-art methods for passenger counting on our dataset.</p>
+
+        <div class="benchmark-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Precision</th>
+                        <th>Recall</th>
+                        <th>F1-Score</th>
+                        <th>MAE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Baseline CNN</td>
+                        <td>0.82</td>
+                        <td>0.79</td>
+                        <td>0.80</td>
+                        <td>2.4</td>
+                    </tr>
+                    <tr>
+                        <td>Faster R-CNN</td>
+                        <td>0.87</td>
+                        <td>0.85</td>
+                        <td>0.86</td>
+                        <td>1.8</td>
+                    </tr>
+                    <tr>
+                        <td>YOLO v5</td>
+                        <td>0.89</td>
+                        <td>0.88</td>
+                        <td>0.88</td>
+                        <td>1.5</td>
+                    </tr>
+                    <tr>
+                        <td>Density Map</td>
+                        <td>0.84</td>
+                        <td>0.83</td>
+                        <td>0.83</td>
+                        <td>1.9</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="benchmark-notes">
+            <p><strong>MAE</strong>: Mean Absolute Error in passenger count</p>
+            <p>For more details on benchmark methodology and evaluation metrics, please refer to our paper.</p>
+        </div>
+    </section>
+
+    <section id="download" class="container section">
+        <h2>Download</h2>
+        <p>The RiderCount dataset will be available for research purposes. Please fill out the request form to access
+            the dataset.</p>
+        <a href="#" class="button"><i class="fas fa-download"></i> Request Dataset Access</a>
+    </section>
+
+    <section id="citation" class="container section">
+        <h2>Citation</h2>
+        <div class="citation-box">
+            <pre>@article{ridercount2023,
+  title={RiderCount: A Dataset for Passenger Counting in the Upper-Decker of a Double-Decker Bus in Hong Kong},
+  author={[Author Names]},
+  journal={arXiv preprint arXiv:2410.11400},
+  year={2023}
+}</pre>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 RiderCount Team. All rights reserved.</p>
+            <p>Contact: <a href="mailto:contact@example.com">contact@example.com</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
