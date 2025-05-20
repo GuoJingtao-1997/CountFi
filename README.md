@@ -1,7 +1,7 @@
 <!--
  * @Author: Guo Jingtao
  * @Date: 2025-05-20 13:24:42
- * @LastEditTime: 2025-05-20 15:47:45
+ * @LastEditTime: 2025-05-20 17:03:14
  * @LastEditors: Guo Jingtao
  * @Description: A dataset for passenger counting in the upper-decker of a double-decker bus in Hong Kong
  * @FilePath: /RiderCount/README.md
@@ -37,7 +37,7 @@ RiderCount/
 ## Setup Instructions
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/RiderCount.git
+   git clone https://github.com/GuoJingtao-1997/RiderCount.git
    cd RiderCount
    ```
 
@@ -57,11 +57,11 @@ The website can be deployed using GitHub Pages:
 
 1. Go to your repository settings
 2. Navigate to the "Pages" section
-3. Select the branch you want to deploy (usually `main` or `master`)
+3. Select the branch you want to deploy (usually `gh-pages`)
 4. Save the settings and wait for the deployment to complete
 
 ## Website
-Visit our [project website](https://your-github-username.github.io/RiderCount) for more information, examples, and download instructions.
+Visit our [project website](https://GuoJingtao-1997.github.io/RiderCount) for more information, examples, and download instructions.
 
 ## Citation
 If you use the RiderCount dataset in your research, please cite our paper:
