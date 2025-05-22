@@ -1,7 +1,7 @@
 <!--
  * @Author: Guo Jingtao
  * @Date: 2025-05-20 13:24:42
- * @LastEditTime: 2025-05-22 21:17:12
+ * @LastEditTime: 2025-05-22 22:49:21
  * @LastEditors: Guo Jingtao
  * @Description: A dataset for passenger counting in the upper-decker of a double-decker bus in Hong Kong
  * @FilePath: /RiderCount/README.md
@@ -27,11 +27,10 @@ RiderCount/
 ├── script.js          # JavaScript functionality
 ├── README.md          # This readme file
 └── images/            # Image assets
-    ├── teaser.png     # Main teaser image
-    ├── example1.png   # Example image 1
-    ├── example2.png   # Example image 2
-    ├── example3.png   # Example image 3
-    └── methodology.png # Methodology diagram
+    ├── 9people.png    # 9 people in the bus
+    ├── 20people.png   # 20 people in the bus
+    ├── methodology.png   # Methodology diagram
+    ├── system_prototype.png   # System prototype
 ```
 
 ## Setup Instructions

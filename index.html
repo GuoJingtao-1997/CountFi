@@ -7,6 +7,9 @@
     <title>RiderCount Dataset</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -15,8 +18,6 @@
             <div class="logo">RiderCount</div>
             <ul class="nav-links">
                 <li><a href="#overview">Overview</a></li>
-                <li><a href="#abstract">Abstract</a></li>
-                <li><a href="#methodology">Methodology</a></li>
                 <li><a href="#system">System</a></li>
                 <li><a href="#dataset">Dataset</a></li>
                 <li><a href="#examples">Examples</a></li>
@@ -36,365 +37,394 @@
     </header>
 
     <section id="overview" class="container section">
-        <h2>Overview</h2>
-        <div class="paper-info">
-            <div class="paper-details">
-                <h3>RiderCount: Wi-Fi CSI-Based Passenger Counting in Double-Decker Buses</h3>
-                <p class="authors">Authors: [Author Names]</p>
-                <p class="conference">arXiv 2023</p>
-                <p class="overview-description">A privacy-preserving approach to passenger counting using Wi-Fi Channel
-                    State Information in public transportation</p>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/pdf/2410.11400" class="button" target="_blank"><i
-                            class="fas fa-file-pdf"></i> Paper</a>
-                    <a href="#download" class="button"><i class="fas fa-download"></i> Dataset</a>
-                    <a href="#" class="button"><i class="fab fa-github"></i> Code</a>
+        <div class="section-wrapper">
+            <div class="section-header">
+                <h2>Overview</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="paper-info">
+                <div class="paper-details">
+                    <h3>RiderCount: Wi-Fi CSI-Based Passenger Counting in Double-Decker Buses</h3>
+                    <p class="authors">Authors: [Author Names]</p>
+                    <p class="conference">arXiv 2023</p>
+                    <p class="overview-description">A privacy-preserving approach to passenger counting using Wi-Fi
+                        Channel State Information in public transportation</p>
+                    <div class="paper-links">
+                        <a href="https://arxiv.org/pdf/2410.11400" class="button" target="_blank"><i
+                                class="fas fa-file-pdf"></i> Paper</a>
+                        <a href="#download" class="button"><i class="fas fa-download"></i> Dataset</a>
+                        <a href="#" class="button"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+                <div class="paper-image">
+                    <img src="images/20people.png" alt="RiderCount Wi-Fi CSI dataset example with passengers">
                 </div>
             </div>
-            <div class="paper-image">
-                <img src="images/20people.png" alt="RiderCount Wi-Fi CSI dataset example with passengers">
+
+            <div class="abstract-content">
+                <h3>Abstract</h3>
+                <p>The RiderCount dataset supports research on Wi-Fi Channel State Information (CSI) based passenger
+                    counting in the upper-decker of double-decker buses in Hong Kong. It provides annotated Wi-Fi CSI
+                    data to develop and evaluate sensing algorithms for accurate, privacy-preserving passenger counting
+                    in public transportation systems. Unlike traditional camera-based approaches, the Wi-Fi CSI method
+                    offers enhanced privacy protection while maintaining accurate counting capabilities through analysis
+                    of signal propagation characteristics affected by passenger presence and movement.</p>
             </div>
-        </div>
-    </section>
 
-    <section id="abstract" class="container section">
-        <h2>Abstract</h2>
-        <p>The RiderCount dataset supports research on Wi-Fi Channel State Information (CSI) based passenger counting in
-            the upper-decker of double-decker buses in Hong Kong. It provides annotated Wi-Fi CSI data to develop and
-            evaluate sensing algorithms for accurate, privacy-preserving passenger counting in public transportation
-            systems. Unlike traditional camera-based approaches, the Wi-Fi CSI method offers enhanced privacy protection
-            while maintaining accurate counting capabilities through analysis of signal propagation characteristics
-            affected by passenger presence and movement.</p>
-    </section>
+            <div class="methodology-content">
+                <div class="methodology-text">
+                    <h3>Methodology</h3>
+                    <p>The RiderCount dataset was collected using Wi-Fi devices installed in the upper deck of
+                        double-decker buses operating on various routes in Hong Kong. Channel State Information (CSI)
+                        data was captured across different times of day, passenger densities, and bus operating
+                        conditions to ensure diversity.</p>
 
-    <section id="methodology" class="container section">
-        <h2>Methodology</h2>
-        <div class="methodology-content">
-            <div class="methodology-text">
-                <h3>Data Collection</h3>
-                <p>The RiderCount dataset was collected using Wi-Fi devices installed in the upper deck of double-decker
-                    buses operating on various routes in Hong Kong. Channel State Information (CSI) data was captured
-                    across different times of day, passenger densities, and bus operating conditions to ensure
-                    diversity.</p>
+                    <div class="methodology-features">
+                        <div class="methodology-feature">
+                            <h4><i class="fas fa-microchip"></i> CSI Processing</h4>
+                            <p>The raw Wi-Fi CSI data was processed to extract features that correlate with passenger
+                                presence and movement. The signal propagation characteristics change based on the number
+                                of passengers and their distribution in the bus, allowing for counting estimation.</p>
+                        </div>
 
-                <h3>CSI Processing</h3>
-                <p>The raw Wi-Fi CSI data was processed to extract features that correlate with passenger presence and
-                    movement. The signal propagation characteristics change based on the number of passengers and their
-                    distribution in the bus, allowing for counting estimation.</p>
+                        <div class="methodology-feature">
+                            <h4><i class="fas fa-tag"></i> Annotation Process</h4>
+                            <p>Ground truth passenger counts were manually recorded during data collection. These
+                                annotations were synchronized with the CSI data timestamps to create labeled data
+                                suitable for machine learning model training and evaluation.</p>
+                        </div>
 
-                <h3>Annotation Process</h3>
-                <p>Ground truth passenger counts were manually recorded during data collection. These annotations were
-                    synchronized with the CSI data timestamps to create labeled data suitable for machine learning model
-                    training and evaluation.</p>
-
-                <h3>Privacy Advantages</h3>
-                <p>Using Wi-Fi CSI data for passenger counting offers significant privacy benefits over traditional
-                    camera-based approaches. The CSI data captures only signal propagation characteristics and cannot be
-                    used to identify individuals, eliminating privacy concerns associated with visual surveillance.</p>
-            </div>
-            <div class="methodology-image">
-                <img src="images/9people.png" alt="Medium occupancy scenario with 9 passengers">
-                <p class="image-caption">Medium occupancy scenario with 9 passengers in the upper deck</p>
+                        <div class="methodology-feature">
+                            <h4><i class="fas fa-user-shield"></i> Privacy Advantages</h4>
+                            <p>Using Wi-Fi CSI data for passenger counting offers significant privacy benefits over
+                                traditional camera-based approaches. The CSI data captures only signal propagation
+                                characteristics and cannot be used to identify individuals, eliminating privacy concerns
+                                associated with visual surveillance.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="system" class="container section">
-        <h2>System Architecture</h2>
-        <div class="system-content">
-            <div class="system-description">
-                <h3>System Components</h3>
-                <p>The RiderCount system uses strategically placed Wi-Fi devices to capture Channel State Information
-                    (CSI) data in the upper deck of double-decker buses. The system consists of:</p>
-                <ul class="system-components">
-                    <li><strong>Wi-Fi Transmitters/Receivers</strong>: Capture CSI data as signals propagate through the
-                        bus environment</li>
-                    <li><strong>Data Collection Units</strong>: Process and store raw CSI measurements</li>
-                    <li><strong>Feature Extraction Module</strong>: Transforms raw CSI data into meaningful features
-                    </li>
-                    <li><strong>Passenger Count Estimation</strong>: Uses machine learning models to estimate the number
-                        of passengers</li>
-                </ul>
-                <p>The entire system operates in real-time, providing privacy-preserving passenger counts without
-                    capturing any personally identifiable information.</p>
+        <div class="section-wrapper">
+            <div class="section-header">
+                <h2>System Architecture</h2>
+                <div class="section-divider"></div>
             </div>
-            <div class="system-image">
-                <img src="images/system_prototype.png" alt="System architecture and components">
-                <p class="image-caption">RiderCount system architecture showing interconnected components</p>
+
+            <div class="system-content">
+                <div class="system-description">
+                    <p>The RiderCount system uses strategically placed Wi-Fi devices to capture Channel State
+                        Information (CSI) data in the upper deck of double-decker buses. The system consists of:</p>
+                    <ul class="system-components">
+                        <li><strong>Wi-Fi Transmitters/Receivers</strong>: Capture CSI data as signals propagate through
+                            the bus environment</li>
+                        <li><strong>Data Collection Units</strong>: Process and store raw CSI measurements</li>
+                        <li><strong>Feature Extraction Module</strong>: Transforms raw CSI data into meaningful features
+                        </li>
+                        <li><strong>Passenger Count Estimation</strong>: Uses machine learning models to estimate the
+                            number of passengers</li>
+                    </ul>
+                    <p>The entire system operates in real-time, providing privacy-preserving passenger counts without
+                        capturing any personally identifiable information.</p>
+                </div>
+                <div class="system-image">
+                    <img src="images/system_prototype.png" alt="System architecture and components">
+                    <p class="image-caption">RiderCount system architecture showing interconnected components</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="dataset" class="container section">
-        <h2>Dataset</h2>
-        <div class="dataset-info">
-            <div class="dataset-stats">
-                <div class="stat-box">
-                    <h3>CSI Samples</h3>
-                    <p class="stat-number">XX,XXX</p>
-                </div>
-                <div class="stat-box">
-                    <h3>Recording Hours</h3>
-                    <p class="stat-number">XXX</p>
-                </div>
-                <div class="stat-box">
-                    <h3>Annotations</h3>
-                    <p class="stat-number">XX,XXX</p>
-                </div>
-                <div class="stat-box">
-                    <h3>Bus Routes</h3>
-                    <p class="stat-number">XX</p>
-                </div>
+        <div class="section-wrapper">
+            <div class="section-header">
+                <h2>Dataset</h2>
+                <div class="section-divider"></div>
             </div>
 
-            <h3>Dataset Features</h3>
-            <ul class="feature-list">
-                <li><strong>Real-world conditions</strong>: Captured in actual double-decker buses in Hong Kong</li>
-                <li><strong>Diverse scenarios</strong>: Various bus conditions, passenger densities, and seating
-                    arrangements</li>
-                <li><strong>Comprehensive annotations</strong>: Includes passenger positions and counts</li>
-                <li><strong>Privacy-preserving</strong>: Using CSI data derived from Wi-Fi signals to protect passenger
-                    identity</li>
-                <li><strong>Multiple collection periods</strong>: Data collected across different dates in 2023 and 2025
-                </li>
-            </ul>
-        </div>
-
-        <div class="dataset-structure">
-            <h3>Dataset Structure</h3>
-            <p>The RiderCount dataset comprises three distinct collection periods, each designed to capture different
-                aspects of passenger counting scenarios in double-decker buses:</p>
-
-            <div class="collection-periods">
-                <div class="period-card">
-                    <div class="period-header">
-                        <h4>February 6-7, 2025</h4>
-                        <span class="period-badge stationary">Stationary Only</span>
+            <div class="dataset-info">
+                <div class="dataset-stats">
+                    <div class="stat-box">
+                        <h3>CSI Samples</h3>
+                        <p class="stat-number">XX,XXX</p>
                     </div>
-                    <div class="period-content">
-                        <ul class="period-features">
-                            <li><strong>Scenario type:</strong> Stationary bus (stopped) scenarios only</li>
-                            <li><strong>Collection locations:</strong> Front, middle, and end sections of the upper deck
-                            </li>
-                            <li><strong>File naming convention:</strong> Files are denoted with suffix
-                                <code>_stop</code>
-                            </li>
-                            <li><strong>Purpose:</strong> To establish baseline CSI patterns in controlled static
-                                environments</li>
-                        </ul>
+                    <div class="stat-box">
+                        <h3>Recording Hours</h3>
+                        <p class="stat-number">XXX</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Annotations</h3>
+                        <p class="stat-number">XX,XXX</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Bus Routes</h3>
+                        <p class="stat-number">XX</p>
                     </div>
                 </div>
 
-                <div class="period-card">
-                    <div class="period-header">
-                        <h4>April 8, 2025</h4>
-                        <span class="period-badge mixed">Mixed Scenarios</span>
-                    </div>
-                    <div class="period-content">
-                        <ul class="period-features">
-                            <li><strong>Scenario types:</strong> Both moving and stationary bus scenarios</li>
-                            <li><strong>Collection locations:</strong> Front, middle, and end sections of the upper deck
-                            </li>
-                            <li><strong>File naming convention:</strong> Files are denoted with suffix <code>_xm</code>
-                                (where x represents relevant parameters)</li>
-                            <li><strong>Purpose:</strong> To capture CSI variations under dynamic conditions with
-                                passenger movement</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="period-card">
-                    <div class="period-header">
-                        <h4>June 13, 2023</h4>
-                        <span class="period-badge controlled">Engine Off</span>
-                    </div>
-                    <div class="period-content">
-                        <ul class="period-features">
-                            <li><strong>Scenario type:</strong> Highly controlled stationary scenario</li>
-                            <li><strong>Special condition:</strong> Bus engine turned off to eliminate vibration
-                                interference</li>
-                            <li><strong>Purpose:</strong> To isolate passenger presence effects from vehicle-induced
-                                signal variations</li>
-                            <li><strong>Applications:</strong> Ideal for algorithm development requiring clean baseline
-                                signals</li>
-                        </ul>
-                    </div>
-                </div>
+                <h3>Dataset Features</h3>
+                <ul class="feature-list">
+                    <li><strong>Real-world conditions</strong>: Captured in actual double-decker buses in Hong Kong</li>
+                    <li><strong>Diverse scenarios</strong>: Various bus conditions, passenger densities, and seating
+                        arrangements</li>
+                    <li><strong>Comprehensive annotations</strong>: Includes passenger positions and counts</li>
+                    <li><strong>Privacy-preserving</strong>: Using CSI data derived from Wi-Fi signals to protect
+                        passenger identity</li>
+                    <li><strong>Multiple collection periods</strong>: Data collected across different dates in 2023 and
+                        2025</li>
+                </ul>
             </div>
 
-            <p class="dataset-note">All three datasets include CSI data with corresponding ground truth passenger
-                counts, enabling comprehensive analysis across different operational conditions.</p>
+            <div class="dataset-structure">
+                <h3>Dataset Structure</h3>
+                <p>The RiderCount dataset comprises three distinct collection periods, each designed to capture
+                    different aspects of passenger counting scenarios in double-decker buses:</p>
+
+                <div class="collection-periods">
+                    <div class="period-card">
+                        <div class="period-header">
+                            <h4>February 6-7, 2025</h4>
+                            <span class="period-badge stationary">Stationary Only</span>
+                        </div>
+                        <div class="period-content">
+                            <ul class="period-features">
+                                <li><strong>Scenario type:</strong> Stationary bus (stopped) scenarios only</li>
+                                <li><strong>Collection locations:</strong> Front, middle, and end sections of the upper
+                                    deck</li>
+                                <li><strong>File naming convention:</strong> Files are denoted with suffix
+                                    <code>_stop</code>
+                                </li>
+                                <li><strong>Purpose:</strong> To establish baseline CSI patterns in controlled static
+                                    environments</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="period-card">
+                        <div class="period-header">
+                            <h4>April 8, 2025</h4>
+                            <span class="period-badge mixed">Mixed Scenarios</span>
+                        </div>
+                        <div class="period-content">
+                            <ul class="period-features">
+                                <li><strong>Scenario types:</strong> Both moving and stationary bus scenarios</li>
+                                <li><strong>Collection locations:</strong> Front, middle, and end sections of the upper
+                                    deck</li>
+                                <li><strong>File naming convention:</strong> Files are denoted with suffix
+                                    <code>_xm</code> (where x represents relevant parameters)
+                                </li>
+                                <li><strong>Purpose:</strong> To capture CSI variations under dynamic conditions with
+                                    passenger movement</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="period-card">
+                        <div class="period-header">
+                            <h4>June 13, 2023</h4>
+                            <span class="period-badge controlled">Engine Off</span>
+                        </div>
+                        <div class="period-content">
+                            <ul class="period-features">
+                                <li><strong>Scenario type:</strong> Highly controlled stationary scenario</li>
+                                <li><strong>Special condition:</strong> Bus engine turned off to eliminate vibration
+                                    interference</li>
+                                <li><strong>Purpose:</strong> To isolate passenger presence effects from vehicle-induced
+                                    signal variations</li>
+                                <li><strong>Applications:</strong> Ideal for algorithm development requiring clean
+                                    baseline signals</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="dataset-note">All three datasets include CSI data with corresponding ground truth passenger
+                    counts, enabling comprehensive analysis across different operational conditions.</p>
+            </div>
         </div>
     </section>
 
     <section id="examples" class="container section">
-        <h2>Examples</h2>
-        <p class="section-intro">Our dataset includes various passenger occupancy scenarios to enable robust model
-            training and testing. Below are two representative examples showing different passenger densities:</p>
-
-        <div class="scenarios-container">
-            <div class="scenario-highlight">
-                <div class="scenario-image">
-                    <img src="images/9people.png" alt="Medium occupancy scenario with 9 passengers">
-                </div>
-                <div class="scenario-description">
-                    <h3>Medium Occupancy Scenario</h3>
-                    <p>This scenario features 9 passengers in the upper deck of a double-decker bus, representing a
-                        medium occupancy case. The passengers are distributed throughout the seating area, providing
-                        varied signal paths for the Wi-Fi CSI data. This distribution allows algorithms to learn
-                        patterns associated with medium passenger density.</p>
-                </div>
+        <div class="section-wrapper">
+            <div class="section-header">
+                <h2>Examples</h2>
+                <div class="section-divider"></div>
             </div>
 
-            <div class="scenario-highlight">
-                <div class="scenario-image">
-                    <img src="images/20people.png" alt="Scenario with 20 passengers">
-                </div>
-                <div class="scenario-description">
-                    <h3>High Occupancy Scenario</h3>
-                    <p>This scenario features 20 passengers in the upper deck of a double-decker bus, representing a
-                        high occupancy case that challenges counting algorithms. Wi-Fi CSI patterns change significantly
-                        as more passengers enter the bus, providing rich data for model training and evaluation.</p>
-                </div>
-            </div>
-        </div>
+            <p class="section-intro">Our dataset includes various passenger occupancy scenarios to enable robust model
+                training and testing. Below are two representative examples showing different passenger densities:</p>
 
-        <h3 class="subsection-title">Additional Scenarios</h3>
-        <div class="examples-grid">
-            <div class="example">
-                <img src="images/example1.png" alt="Example 1">
-                <p>Empty bus scenario</p>
-            </div>
-            <div class="example">
-                <img src="images/example2.png" alt="Example 2">
-                <p>Low occupancy scenario</p>
-            </div>
-            <div class="example">
-                <img src="images/example3.png" alt="Example 3">
-                <p>Very high occupancy scenario</p>
+            <div class="examples-grid">
+                <div class="example-card">
+                    <div class="example-card-image">
+                        <img src="images/9people.png" alt="Medium occupancy scenario with 9 passengers">
+                    </div>
+                    <div class="example-card-content">
+                        <h3>Medium Occupancy (9 Passengers)</h3>
+                        <p>This scenario features 9 passengers in the upper deck of a double-decker bus, representing a
+                            medium occupancy case. The passengers are distributed throughout the seating area, providing
+                            varied signal paths for the Wi-Fi CSI data. This distribution allows algorithms to learn
+                            patterns associated with medium passenger density.</p>
+                    </div>
+                </div>
+
+                <div class="example-card">
+                    <div class="example-card-image">
+                        <img src="images/20people.png" alt="High occupancy scenario with 20 passengers">
+                    </div>
+                    <div class="example-card-content">
+                        <h3>High Occupancy (20 Passengers)</h3>
+                        <p>This scenario features 20 passengers in the upper deck of a double-decker bus, representing a
+                            high occupancy case that challenges counting algorithms. Wi-Fi CSI patterns change
+                            significantly as more passengers enter the bus, providing rich data for model training and
+                            evaluation.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="benchmarks" class="container section">
-        <h2>Benchmarks</h2>
-        <p>We provide baseline results using several state-of-the-art methods for Wi-Fi CSI-based passenger counting on
-            our dataset.</p>
+        <div class="section-wrapper">
+            <div class="section-header">
+                <h2>Benchmarks</h2>
+                <div class="section-divider"></div>
+            </div>
 
-        <div class="benchmark-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Method</th>
-                        <th>Precision</th>
-                        <th>Recall</th>
-                        <th>F1-Score</th>
-                        <th>MAE</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>CSI-CNN</td>
-                        <td>0.82</td>
-                        <td>0.79</td>
-                        <td>0.80</td>
-                        <td>2.4</td>
-                    </tr>
-                    <tr>
-                        <td>CSI-LSTM</td>
-                        <td>0.87</td>
-                        <td>0.85</td>
-                        <td>0.86</td>
-                        <td>1.8</td>
-                    </tr>
-                    <tr>
-                        <td>DeepSense</td>
-                        <td>0.89</td>
-                        <td>0.88</td>
-                        <td>0.88</td>
-                        <td>1.5</td>
-                    </tr>
-                    <tr>
-                        <td>FreqDense</td>
-                        <td>0.84</td>
-                        <td>0.83</td>
-                        <td>0.83</td>
-                        <td>1.9</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+            <p>We provide baseline results using several state-of-the-art methods for Wi-Fi CSI-based passenger counting
+                on our dataset:</p>
 
-        <div class="benchmark-notes">
-            <p><strong>MAE</strong>: Mean Absolute Error in passenger count</p>
-            <p>For more details on benchmark methodology and evaluation metrics, please refer to our paper.</p>
+            <div class="benchmark-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Method</th>
+                            <th>Precision</th>
+                            <th>Recall</th>
+                            <th>F1-Score</th>
+                            <th>MAE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CSI-CNN</td>
+                            <td>0.82</td>
+                            <td>0.79</td>
+                            <td>0.80</td>
+                            <td>2.4</td>
+                        </tr>
+                        <tr>
+                            <td>CSI-LSTM</td>
+                            <td>0.87</td>
+                            <td>0.85</td>
+                            <td>0.86</td>
+                            <td>1.8</td>
+                        </tr>
+                        <tr>
+                            <td>DeepSense</td>
+                            <td>0.89</td>
+                            <td>0.88</td>
+                            <td>0.88</td>
+                            <td>1.5</td>
+                        </tr>
+                        <tr>
+                            <td>FreqDense</td>
+                            <td>0.84</td>
+                            <td>0.83</td>
+                            <td>0.83</td>
+                            <td>1.9</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="benchmark-notes">
+                <p><strong>MAE</strong>: Mean Absolute Error in passenger count</p>
+                <p>For more details on benchmark methodology and evaluation metrics, please refer to our paper.</p>
+            </div>
         </div>
     </section>
 
     <section id="download" class="container section">
-        <h2>Download</h2>
-        <p>The RiderCount dataset is available for research purposes. Each collection period offers unique
-            characteristics as described in the Dataset Structure section.</p>
+        <div class="section-wrapper">
+            <div class="section-header">
+                <h2>Download</h2>
+                <div class="section-divider"></div>
+            </div>
 
-        <div class="dataset-links">
-            <h3>Available Datasets</h3>
-            <ul class="download-list">
-                <li>
-                    <span class="dataset-date">February 6-7, 2025</span>
-                    <div class="dataset-description">
-                        <p>Stationary scenario data with suffix <code>_stop</code> collected from front, middle, and end
-                            sections.</p>
-                    </div>
-                    <a href="https://connectpolyu-my.sharepoint.com/:u:/g/personal/23086604r_connect_polyu_hk/EaS89dNFjOVKuYAwrWiEEqoBDxUcuABAABfe_OjSRMAcZA?e=xaE56y"
-                        class="button" target="_blank">
-                        <i class="fas fa-download"></i> Download CSI Data (Feb 2025)
-                    </a>
-                </li>
-                <li>
-                    <span class="dataset-date">April 8, 2025</span>
-                    <div class="dataset-description">
-                        <p>Mixed moving and stationary scenarios with suffix <code>_xm</code>, collected from multiple
-                            sections.</p>
-                    </div>
-                    <a href="https://connectpolyu-my.sharepoint.com/:u:/g/personal/23086604r_connect_polyu_hk/EReOZ6t6Wq5NpfmvGpwF06cBsPgZKqqrZBTJVJj_pyMooQ?e=ueGV6h"
-                        class="button" target="_blank">
-                        <i class="fas fa-download"></i> Download CSI Data (Apr 2025)
-                    </a>
-                </li>
-                <li>
-                    <span class="dataset-date">June 13, 2023</span>
-                    <div class="dataset-description">
-                        <p>Controlled environment data with bus engine off for minimal interference and cleaner signal
-                            patterns.</p>
-                    </div>
-                    <a href="https://connectpolyu-my.sharepoint.com/:u:/g/personal/23086604r_connect_polyu_hk/ER27UzFLf4BEgBmnlztErOoB6b_WkkxjAurbbOGZvSiCKg?e=XxKNXY"
-                        class="button" target="_blank">
-                        <i class="fas fa-download"></i> Download CSI Data (Jun 2023)
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <p>The RiderCount dataset is available for research purposes. Each collection period offers unique
+                characteristics as described in the Dataset Structure section.</p>
 
-        <div class="usage-policy">
-            <h3>Usage Policy</h3>
-            <p>By downloading and using this dataset, you agree to:</p>
-            <ol>
-                <li>Use the dataset for research purposes only</li>
-                <li>Properly cite our paper in any publications that use this dataset</li>
-                <li>Not redistribute the dataset without permission</li>
-            </ol>
+            <div class="dataset-links">
+                <h3>Available Datasets</h3>
+                <ul class="download-list">
+                    <li>
+                        <span class="dataset-date">February 6-7, 2025</span>
+                        <div class="dataset-description">
+                            <p>Stationary scenario data with suffix <code>_stop</code> collected from front, middle, and
+                                end sections.</p>
+                        </div>
+                        <a href="https://connectpolyu-my.sharepoint.com/:u:/g/personal/23086604r_connect_polyu_hk/EaS89dNFjOVKuYAwrWiEEqoBDxUcuABAABfe_OjSRMAcZA?e=xaE56y"
+                            class="button" target="_blank">
+                            <i class="fas fa-download"></i> Download CSI Data (Feb 2025)
+                        </a>
+                    </li>
+                    <li>
+                        <span class="dataset-date">April 8, 2025</span>
+                        <div class="dataset-description">
+                            <p>Mixed moving and stationary scenarios with suffix <code>_xm</code>, collected from
+                                multiple sections.</p>
+                        </div>
+                        <a href="https://connectpolyu-my.sharepoint.com/:u:/g/personal/23086604r_connect_polyu_hk/EReOZ6t6Wq5NpfmvGpwF06cBsPgZKqqrZBTJVJj_pyMooQ?e=ueGV6h"
+                            class="button" target="_blank">
+                            <i class="fas fa-download"></i> Download CSI Data (Apr 2025)
+                        </a>
+                    </li>
+                    <li>
+                        <span class="dataset-date">June 13, 2023</span>
+                        <div class="dataset-description">
+                            <p>Controlled environment data with bus engine off for minimal interference and cleaner
+                                signal patterns.</p>
+                        </div>
+                        <a href="https://connectpolyu-my.sharepoint.com/:u:/g/personal/23086604r_connect_polyu_hk/ER27UzFLf4BEgBmnlztErOoB6b_WkkxjAurbbOGZvSiCKg?e=XxKNXY"
+                            class="button" target="_blank">
+                            <i class="fas fa-download"></i> Download CSI Data (Jun 2023)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="usage-policy">
+                <h3>Usage Policy</h3>
+                <p>By downloading and using this dataset, you agree to:</p>
+                <ol>
+                    <li>Use the dataset for research purposes only</li>
+                    <li>Properly cite our paper in any publications that use this dataset</li>
+                    <li>Not redistribute the dataset without permission</li>
+                </ol>
+            </div>
         </div>
     </section>
 
     <section id="citation" class="container section">
-        <h2>Citation</h2>
-        <div class="citation-box">
-            <pre>@article{ridercount2023,
+        <div class="section-wrapper">
+            <div class="section-header">
+                <h2>Citation</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="citation-box">
+                <pre>@article{ridercount2023,
   title={RiderCount: A Dataset for Passenger Counting in the Upper-Decker of a Double-Decker Bus in Hong Kong},
   author={[Author Names]},
   journal={arXiv preprint arXiv:2410.11400},
   year={2023}
 }</pre>
+            </div>
         </div>
     </section>
 
