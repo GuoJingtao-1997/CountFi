@@ -159,6 +159,72 @@
                 </li>
             </ul>
         </div>
+
+        <div class="dataset-structure">
+            <h3>Dataset Structure</h3>
+            <p>The RiderCount dataset comprises three distinct collection periods, each designed to capture different
+                aspects of passenger counting scenarios in double-decker buses:</p>
+
+            <div class="collection-periods">
+                <div class="period-card">
+                    <div class="period-header">
+                        <h4>February 6-7, 2025</h4>
+                        <span class="period-badge stationary">Stationary Only</span>
+                    </div>
+                    <div class="period-content">
+                        <ul class="period-features">
+                            <li><strong>Scenario type:</strong> Stationary bus (stopped) scenarios only</li>
+                            <li><strong>Collection locations:</strong> Front, middle, and end sections of the upper deck
+                            </li>
+                            <li><strong>File naming convention:</strong> Files are denoted with suffix
+                                <code>_stop</code>
+                            </li>
+                            <li><strong>Purpose:</strong> To establish baseline CSI patterns in controlled static
+                                environments</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="period-card">
+                    <div class="period-header">
+                        <h4>April 8, 2025</h4>
+                        <span class="period-badge mixed">Mixed Scenarios</span>
+                    </div>
+                    <div class="period-content">
+                        <ul class="period-features">
+                            <li><strong>Scenario types:</strong> Both moving and stationary bus scenarios</li>
+                            <li><strong>Collection locations:</strong> Front, middle, and end sections of the upper deck
+                            </li>
+                            <li><strong>File naming convention:</strong> Files are denoted with suffix <code>_xm</code>
+                                (where x represents relevant parameters)</li>
+                            <li><strong>Purpose:</strong> To capture CSI variations under dynamic conditions with
+                                passenger movement</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="period-card">
+                    <div class="period-header">
+                        <h4>June 13, 2023</h4>
+                        <span class="period-badge controlled">Engine Off</span>
+                    </div>
+                    <div class="period-content">
+                        <ul class="period-features">
+                            <li><strong>Scenario type:</strong> Highly controlled stationary scenario</li>
+                            <li><strong>Special condition:</strong> Bus engine turned off to eliminate vibration
+                                interference</li>
+                            <li><strong>Purpose:</strong> To isolate passenger presence effects from vehicle-induced
+                                signal variations</li>
+                            <li><strong>Applications:</strong> Ideal for algorithm development requiring clean baseline
+                                signals</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <p class="dataset-note">All three datasets include CSI data with corresponding ground truth passenger
+                counts, enabling comprehensive analysis across different operational conditions.</p>
+        </div>
     </section>
 
     <section id="examples" class="container section">
@@ -267,14 +333,18 @@
 
     <section id="download" class="container section">
         <h2>Download</h2>
-        <p>The RiderCount dataset is available for research purposes. Access the datasets collected on different dates
-            below:</p>
+        <p>The RiderCount dataset is available for research purposes. Each collection period offers unique
+            characteristics as described in the Dataset Structure section.</p>
 
         <div class="dataset-links">
             <h3>Available Datasets</h3>
             <ul class="download-list">
                 <li>
                     <span class="dataset-date">February 6-7, 2025</span>
+                    <div class="dataset-description">
+                        <p>Stationary scenario data with suffix <code>_stop</code> collected from front, middle, and end
+                            sections.</p>
+                    </div>
                     <a href="https://connectpolyu-my.sharepoint.com/:u:/g/personal/23086604r_connect_polyu_hk/EaS89dNFjOVKuYAwrWiEEqoBDxUcuABAABfe_OjSRMAcZA?e=xaE56y"
                         class="button" target="_blank">
                         <i class="fas fa-download"></i> Download CSI Data (Feb 2025)
@@ -282,6 +352,10 @@
                 </li>
                 <li>
                     <span class="dataset-date">April 8, 2025</span>
+                    <div class="dataset-description">
+                        <p>Mixed moving and stationary scenarios with suffix <code>_xm</code>, collected from multiple
+                            sections.</p>
+                    </div>
                     <a href="https://connectpolyu-my.sharepoint.com/:u:/g/personal/23086604r_connect_polyu_hk/EReOZ6t6Wq5NpfmvGpwF06cBsPgZKqqrZBTJVJj_pyMooQ?e=ueGV6h"
                         class="button" target="_blank">
                         <i class="fas fa-download"></i> Download CSI Data (Apr 2025)
@@ -289,6 +363,10 @@
                 </li>
                 <li>
                     <span class="dataset-date">June 13, 2023</span>
+                    <div class="dataset-description">
+                        <p>Controlled environment data with bus engine off for minimal interference and cleaner signal
+                            patterns.</p>
+                    </div>
                     <a href="https://connectpolyu-my.sharepoint.com/:u:/g/personal/23086604r_connect_polyu_hk/ER27UzFLf4BEgBmnlztErOoB6b_WkkxjAurbbOGZvSiCKg?e=XxKNXY"
                         class="button" target="_blank">
                         <i class="fas fa-download"></i> Download CSI Data (Jun 2023)
