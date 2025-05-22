@@ -38,27 +38,30 @@
         <h2>Overview</h2>
         <div class="paper-info">
             <div class="paper-details">
-                <h3>RiderCount: Passenger Counting in Double-Decker Buses</h3>
+                <h3>RiderCount: Wi-Fi CSI-Based Passenger Counting in Double-Decker Buses</h3>
                 <p class="authors">Authors: [Author Names]</p>
                 <p class="conference">arXiv 2023</p>
                 <div class="paper-links">
                     <a href="https://arxiv.org/pdf/2410.11400" class="button" target="_blank"><i
                             class="fas fa-file-pdf"></i> Paper</a>
-                    <a href="#" class="button"><i class="fas fa-download"></i> Dataset</a>
+                    <a href="#download" class="button"><i class="fas fa-download"></i> Dataset</a>
                     <a href="#" class="button"><i class="fab fa-github"></i> Code</a>
                 </div>
             </div>
             <div class="paper-image">
-                <img src="images/teaser.png" alt="Example of RiderCount dataset">
+                <img src="images/teaser.png" alt="RiderCount Wi-Fi CSI dataset example">
             </div>
         </div>
     </section>
 
     <section id="abstract" class="container section">
         <h2>Abstract</h2>
-        <p>This dataset supports research on passenger counting in the upper-decker of double-decker buses in Hong Kong.
-            It provides annotated data to develop and evaluate computer vision algorithms for accurate passenger
-            counting in public transportation systems.</p>
+        <p>The RiderCount dataset supports research on Wi-Fi Channel State Information (CSI) based passenger counting in
+            the upper-decker of double-decker buses in Hong Kong. It provides annotated Wi-Fi CSI data to develop and
+            evaluate sensing algorithms for accurate, privacy-preserving passenger counting in public transportation
+            systems. Unlike traditional camera-based approaches, the Wi-Fi CSI method offers enhanced privacy protection
+            while maintaining accurate counting capabilities through analysis of signal propagation characteristics
+            affected by passenger presence and movement.</p>
     </section>
 
     <section id="methodology" class="container section">
@@ -66,21 +69,28 @@
         <div class="methodology-content">
             <div class="methodology-text">
                 <h3>Data Collection</h3>
-                <p>The RiderCount dataset was collected using cameras installed in the upper deck of double-decker buses
-                    operating on various routes in Hong Kong. Data was captured across different times of day, weather
-                    conditions, and passenger densities to ensure diversity.</p>
+                <p>The RiderCount dataset was collected using Wi-Fi devices installed in the upper deck of double-decker
+                    buses operating on various routes in Hong Kong. Channel State Information (CSI) data was captured
+                    across different times of day, passenger densities, and bus operating conditions to ensure
+                    diversity.</p>
+
+                <h3>CSI Processing</h3>
+                <p>The raw Wi-Fi CSI data was processed to extract features that correlate with passenger presence and
+                    movement. The signal propagation characteristics change based on the number of passengers and their
+                    distribution in the bus, allowing for counting estimation.</p>
 
                 <h3>Annotation Process</h3>
-                <p>Each frame was carefully annotated by human annotators who marked the position of each passenger. The
-                    annotations were then verified through a quality assurance process to ensure accuracy.</p>
+                <p>Ground truth passenger counts were manually recorded during data collection. These annotations were
+                    synchronized with the CSI data timestamps to create labeled data suitable for machine learning model
+                    training and evaluation.</p>
 
-                <h3>Privacy Considerations</h3>
-                <p>To protect passenger privacy, all faces and identifying features have been blurred or processed using
-                    privacy-preserving techniques in accordance with ethical guidelines for public transportation data
-                    collection.</p>
+                <h3>Privacy Advantages</h3>
+                <p>Using Wi-Fi CSI data for passenger counting offers significant privacy benefits over traditional
+                    camera-based approaches. The CSI data captures only signal propagation characteristics and cannot be
+                    used to identify individuals, eliminating privacy concerns associated with visual surveillance.</p>
             </div>
             <div class="methodology-image">
-                <img src="images/methodology.png" alt="Data collection and annotation process">
+                <img src="images/methodology.png" alt="Wi-Fi CSI data collection and processing">
             </div>
         </div>
     </section>
@@ -90,11 +100,11 @@
         <div class="dataset-info">
             <div class="dataset-stats">
                 <div class="stat-box">
-                    <h3>Images</h3>
+                    <h3>CSI Samples</h3>
                     <p class="stat-number">XX,XXX</p>
                 </div>
                 <div class="stat-box">
-                    <h3>Videos</h3>
+                    <h3>Recording Hours</h3>
                     <p class="stat-number">XXX</p>
                 </div>
                 <div class="stat-box">
@@ -102,7 +112,7 @@
                     <p class="stat-number">XX,XXX</p>
                 </div>
                 <div class="stat-box">
-                    <h3>Scenarios</h3>
+                    <h3>Bus Routes</h3>
                     <p class="stat-number">XX</p>
                 </div>
             </div>
@@ -110,10 +120,13 @@
             <h3>Dataset Features</h3>
             <ul class="feature-list">
                 <li><strong>Real-world conditions</strong>: Captured in actual double-decker buses in Hong Kong</li>
-                <li><strong>Diverse scenarios</strong>: Various lighting conditions, passenger densities, and seating
+                <li><strong>Diverse scenarios</strong>: Various bus conditions, passenger densities, and seating
                     arrangements</li>
                 <li><strong>Comprehensive annotations</strong>: Includes passenger positions and counts</li>
-                <li><strong>Privacy-preserving</strong>: Processed to protect passenger identity</li>
+                <li><strong>Privacy-preserving</strong>: Using CSI data derived from Wi-Fi signals to protect passenger
+                    identity</li>
+                <li><strong>Multiple collection periods</strong>: Data collected across different dates in 2023 and 2025
+                </li>
             </ul>
         </div>
     </section>
@@ -138,7 +151,8 @@
 
     <section id="benchmarks" class="container section">
         <h2>Benchmarks</h2>
-        <p>We provide baseline results using several state-of-the-art methods for passenger counting on our dataset.</p>
+        <p>We provide baseline results using several state-of-the-art methods for Wi-Fi CSI-based passenger counting on
+            our dataset.</p>
 
         <div class="benchmark-table">
             <table>
@@ -153,28 +167,28 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Baseline CNN</td>
+                        <td>CSI-CNN</td>
                         <td>0.82</td>
                         <td>0.79</td>
                         <td>0.80</td>
                         <td>2.4</td>
                     </tr>
                     <tr>
-                        <td>Faster R-CNN</td>
+                        <td>CSI-LSTM</td>
                         <td>0.87</td>
                         <td>0.85</td>
                         <td>0.86</td>
                         <td>1.8</td>
                     </tr>
                     <tr>
-                        <td>YOLO v5</td>
+                        <td>DeepSense</td>
                         <td>0.89</td>
                         <td>0.88</td>
                         <td>0.88</td>
                         <td>1.5</td>
                     </tr>
                     <tr>
-                        <td>Density Map</td>
+                        <td>FreqDense</td>
                         <td>0.84</td>
                         <td>0.83</td>
                         <td>0.83</td>
@@ -192,9 +206,45 @@
 
     <section id="download" class="container section">
         <h2>Download</h2>
-        <p>The RiderCount dataset will be available for research purposes. Please fill out the request form to access
-            the dataset.</p>
-        <a href="#" class="button"><i class="fas fa-download"></i> Request Dataset Access</a>
+        <p>The RiderCount dataset is available for research purposes. Access the datasets collected on different dates
+            below:</p>
+
+        <div class="dataset-links">
+            <h3>Available Datasets</h3>
+            <ul class="download-list">
+                <li>
+                    <span class="dataset-date">February 6-7, 2025</span>
+                    <a href="https://connectpolyu-my.sharepoint.com/:u:/g/personal/23086604r_connect_polyu_hk/EaS89dNFjOVKuYAwrWiEEqoBDxUcuABAABfe_OjSRMAcZA?e=xaE56y"
+                        class="button" target="_blank">
+                        <i class="fas fa-download"></i> Download CSI Data (Feb 2025)
+                    </a>
+                </li>
+                <li>
+                    <span class="dataset-date">April 8, 2025</span>
+                    <a href="https://connectpolyu-my.sharepoint.com/:u:/g/personal/23086604r_connect_polyu_hk/EReOZ6t6Wq5NpfmvGpwF06cBsPgZKqqrZBTJVJj_pyMooQ?e=ueGV6h"
+                        class="button" target="_blank">
+                        <i class="fas fa-download"></i> Download CSI Data (Apr 2025)
+                    </a>
+                </li>
+                <li>
+                    <span class="dataset-date">June 13, 2023</span>
+                    <a href="https://connectpolyu-my.sharepoint.com/:u:/g/personal/23086604r_connect_polyu_hk/ER27UzFLf4BEgBmnlztErOoB6b_WkkxjAurbbOGZvSiCKg?e=XxKNXY"
+                        class="button" target="_blank">
+                        <i class="fas fa-download"></i> Download CSI Data (Jun 2023)
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="usage-policy">
+            <h3>Usage Policy</h3>
+            <p>By downloading and using this dataset, you agree to:</p>
+            <ol>
+                <li>Use the dataset for research purposes only</li>
+                <li>Properly cite our paper in any publications that use this dataset</li>
+                <li>Not redistribute the dataset without permission</li>
+            </ol>
+        </div>
     </section>
 
     <section id="citation" class="container section">

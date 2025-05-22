@@ -1,7 +1,7 @@
 <!--
  * @Author: Guo Jingtao
  * @Date: 2025-05-20 13:24:42
- * @LastEditTime: 2025-05-20 17:22:11
+ * @LastEditTime: 2025-05-22 16:14:37
  * @LastEditors: Guo Jingtao
  * @Description: A dataset for passenger counting in the upper-decker of a double-decker bus in Hong Kong
  * @FilePath: /RiderCount/README.md
@@ -15,7 +15,7 @@ RiderCount is a comprehensive dataset designed to support research on Wi-Fi CSI-
 
 ## Dataset Features
 - **Real-world conditions**: Captured in actual double-decker buses in Hong Kong
-- **Diverse scenarios**: Various device conditions, passenger densities, and seating arrangements
+- **Diverse scenarios**: Various bus conditions, passenger densities, and seating arrangements
 - **Comprehensive annotations**: Includes passenger positions and counts
 - **Privacy-preserving**: Using CSI data derived from Wi-Fi signal to protect passenger identity
 
