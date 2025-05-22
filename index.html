@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RiderCount Dataset</title>
+    <title>FusionCount Dataset</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link
@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <div class="logo">RiderCount</div>
+            <div class="logo">FusionCount</div>
             <ul class="nav-links">
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#system">System</a></li>
@@ -30,7 +30,7 @@
 
     <header>
         <div class="container">
-            <h1>RiderCount</h1>
+            <h1>FusionCount</h1>
             <p class="subtitle">A Dataset for Passenger Counting in the Upper-Decker of a Double-Decker Bus in Hong Kong
             </p>
         </div>
@@ -45,16 +45,18 @@
 
             <div class="paper-info">
                 <div class="paper-details">
-                    <h3>RiderCount: Wi-Fi CSI-Based Passenger Counting in Double-Decker Buses</h3>
-                    <p class="authors">Authors: [Author Names]</p>
-                    <p class="conference">arXiv 2023</p>
+                    <h3>FusionCount: RSSI-Assisted CSI-Based Passenger Counting with Multiple Wi-Fi Receivers</h3>
+                    <p class="authors">Authors: [Jingtao Gio; Wenhao Zhuang; Yuyi Mao; Ivan Wang-Hei Ho]</p>
+                    <p class="conference">WCNC 2025</p>
                     <p class="overview-description">A privacy-preserving approach to passenger counting using Wi-Fi
                         Channel State Information in public transportation</p>
                     <div class="paper-links">
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10978465" class="button"
+                            target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
                         <a href="https://arxiv.org/pdf/2410.11400" class="button" target="_blank"><i
-                                class="fas fa-file-pdf"></i> Paper</a>
+                                class="fas fa-file-pdf"></i> Arxiv</a>
                         <a href="#download" class="button"><i class="fas fa-download"></i> Dataset</a>
-                        <a href="#" class="button"><i class="fab fa-github"></i> Code</a>
+                        <!-- <a href="#" class="button"><i class="fab fa-github"></i> Code</a> -->
                     </div>
                 </div>
                 <div class="paper-image">
@@ -64,10 +66,11 @@
 
             <div class="abstract-content">
                 <h3>Abstract</h3>
-                <p>The RiderCount dataset supports research on Wi-Fi Channel State Information (CSI) based passenger
-                    counting in the upper-decker of double-decker buses in Hong Kong. It provides annotated Wi-Fi CSI
-                    data to develop and evaluate sensing algorithms for accurate, privacy-preserving passenger counting
-                    in public transportation systems. Unlike traditional camera-based approaches, the Wi-Fi CSI method
+                <p>The FusionCount dataset supports research on RSSI-assisted CSI-based passenger counting with multiple
+                    Wi-Fi receivers in the upper-decker of double-decker buses in Hong Kong. It provides annotated Wi-Fi
+                    CSI data to develop and evaluate sensing algorithms for accurate, privacy-preserving passenger
+                    counting in public transportation systems. Unlike traditional camera-based approaches, the Wi-Fi CSI
+                    method
                     offers enhanced privacy protection while maintaining accurate counting capabilities through analysis
                     of signal propagation characteristics affected by passenger presence and movement.</p>
             </div>
@@ -75,7 +78,7 @@
             <div class="methodology-content">
                 <div class="methodology-text">
                     <h3>Methodology</h3>
-                    <p>The RiderCount dataset was collected using Wi-Fi devices installed in the upper deck of
+                    <p>The FusionCount dataset was collected using Wi-Fi devices installed in the upper deck of
                         double-decker buses operating on various routes in Hong Kong. Channel State Information (CSI)
                         data was captured across different times of day, passenger densities, and bus operating
                         conditions to ensure diversity.</p>
@@ -117,7 +120,7 @@
 
             <div class="system-content">
                 <div class="system-description">
-                    <p>The RiderCount system uses strategically placed Wi-Fi devices to capture Channel State
+                    <p>The FusionCount system uses strategically placed Wi-Fi devices to capture Channel State
                         Information (CSI) data in the upper deck of double-decker buses. The system consists of:</p>
                     <ul class="system-components">
                         <li><strong>Wi-Fi Transmitters/Receivers</strong>: Capture CSI data as signals propagate through
@@ -162,7 +165,7 @@
                     </div>
                     <div class="stat-box">
                         <h3>Bus Routes</h3>
-                        <p class="stat-number">XX</p>
+                        <p class="stat-number">5</p>
                     </div>
                 </div>
 
@@ -295,8 +298,8 @@
                 <div class="section-divider"></div>
             </div>
 
-            <p>We provide baseline results using several state-of-the-art methods for Wi-Fi CSI-based passenger counting
-                on our dataset:</p>
+            <p>We provide baseline results using several state-of-the-art methods for multiple receiver Wi-Fi CSI-based
+                passenger counting on our dataset:</p>
 
             <div class="benchmark-table">
                 <table>
@@ -419,10 +422,10 @@
 
             <div class="citation-box">
                 <pre>@article{ridercount2023,
-  title={RiderCount: A Dataset for Passenger Counting in the Upper-Decker of a Double-Decker Bus in Hong Kong},
-  author={[Author Names]},
-  journal={arXiv preprint arXiv:2410.11400},
-  year={2023}
+  title={RSSI-Assisted CSI-Based Passenger Counting with Multiple Wi-Fi Receivers},
+  author={[Jingtao Guo; Wenhao Zhuang; Yuyi Mao; Ivan Wang-Hei Ho]},
+  journal={2025 IEEE Wireless Communications and Networking Conference (WCNC)},
+  year={2025}
 }</pre>
             </div>
         </div>
@@ -430,8 +433,9 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 RiderCount Team. All rights reserved.</p>
-            <p>Contact: <a href="mailto:contact@example.com">contact@example.com</a></p>
+            <p>&copy; 2025 iVANET Research Group. All rights reserved.</p>
+            <p>Contact: <a href="mailto:jingtao2023 dot guo at connect dot polyu dot hk">jingtao2023 dot guo at connect
+                    dot polyu dot hk</a></p>
         </div>
     </footer>
 
