@@ -4,14 +4,14 @@
  * @LastEditTime: 2025-05-22 22:49:21
  * @LastEditors: Guo Jingtao
  * @Description: A dataset for passenger counting in the upper-decker of a double-decker bus in Hong Kong
- * @FilePath: /RiderCount/README.md
+ * @FilePath: /CountFi/README.md
  * 
 -->
-# RiderCount
+# CountFi
 A dataset for passenger counting task based on Wi-Fi CSI in the upper-decker of a double-decker bus in Hong Kong
 
 ## Overview
-RiderCount is a comprehensive dataset designed to support research on Wi-Fi CSI-based passenger counting in the upper-decker of double-decker buses in Hong Kong. This dataset provides annotated data to develop and evaluate Wi-Fi CSI-based sensing algorithms for accurate passenger counting in public transportation systems.
+CountFi is a comprehensive dataset designed to support research on Wi-Fi CSI-based passenger counting in the upper-decker of double-decker buses in Hong Kong. This dataset provides annotated data to develop and evaluate Wi-Fi CSI-based sensing algorithms for accurate passenger counting in public transportation systems.
 
 ## Dataset Features
 - **Real-world conditions**: Captured in actual double-decker buses in Hong Kong
@@ -21,7 +21,7 @@ RiderCount is a comprehensive dataset designed to support research on Wi-Fi CSI-
 
 ## Project Structure
 ```
-RiderCount/
+CountFi/
 ├── index.html         # Main webpage
 ├── styles.css         # CSS styles
 ├── script.js          # JavaScript functionality
@@ -36,8 +36,8 @@ RiderCount/
 ## Setup Instructions
 1. Clone this repository:
    ```
-   git clone https://github.com/GuoJingtao-1997/RiderCount.git
-   cd RiderCount
+   git clone https://github.com/GuoJingtao-1997/CountFi.git
+   cd CountFi
    ```
 
 2. To view the website locally, you can use any simple HTTP server:
@@ -60,14 +60,14 @@ The website can be deployed using GitHub Pages:
 4. Save the settings and wait for the deployment to complete
 
 ## Website
-Visit our [project website](https://GuoJingtao-1997.github.io/RiderCount) for more information, examples, and download instructions.
+Visit our [project website](https://GuoJingtao-1997.github.io/CountFi) for more information, examples, and download instructions.
 
 ## Citation
-If you use the RiderCount dataset in your research, please cite our paper:
+If you use the CountFi dataset in your research, please cite our paper:
 
 ```
-@article{ridercount2023,
-  title={RiderCount: A Dataset for Passenger Counting in the Upper-Decker of a Double-Decker Bus in Hong Kong},
+@article{countFi2023,
+  title={CountFi: A Dataset for Passenger Counting in the Upper-Decker of a Double-Decker Bus in Hong Kong},
   author={[Author Names]},
   journal={arXiv preprint arXiv:2410.11400},
   year={2023}
