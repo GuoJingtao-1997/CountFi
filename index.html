@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FusionCount Dataset</title>
+    <title>RiderCount Dataset</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link
@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <div class="logo">FusionCount</div>
+            <div class="logo">RiderCount</div>
             <ul class="nav-links">
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#system">System</a></li>
@@ -30,7 +30,7 @@
 
     <header>
         <div class="container">
-            <h1>FusionCount</h1>
+            <h1>RiderCount</h1>
             <p class="subtitle">A Dataset for Passenger Counting in the Upper-Decker of a Double-Decker Bus in Hong Kong
             </p>
         </div>
@@ -45,8 +45,8 @@
 
             <div class="paper-info">
                 <div class="paper-details">
-                    <h3>FusionCount: RSSI-Assisted CSI-Based Passenger Counting with Multiple Wi-Fi Receivers</h3>
-                    <p class="authors">Authors: [Jingtao Gio; Wenhao Zhuang; Yuyi Mao; Ivan Wang-Hei Ho]</p>
+                    <h3>RiderCount: RSSI-Assisted CSI-Based Passenger Counting with Multiple Wi-Fi Receivers</h3>
+                    <p class="authors">Authors: Jingtao Guo, Wenhao Zhuang, Yuyi Mao, Ivan Wang-Hei Ho</p>
                     <p class="conference">WCNC 2025</p>
                     <p class="overview-description">A privacy-preserving approach to passenger counting using Wi-Fi
                         Channel State Information in public transportation</p>
@@ -66,7 +66,7 @@
 
             <div class="abstract-content">
                 <h3>Abstract</h3>
-                <p>The FusionCount dataset supports research on RSSI-assisted CSI-based passenger counting with multiple
+                <p>The RiderCount dataset supports research on RSSI-assisted CSI-based passenger counting with multiple
                     Wi-Fi receivers in the upper-decker of double-decker buses in Hong Kong. It provides annotated Wi-Fi
                     CSI data to develop and evaluate sensing algorithms for accurate, privacy-preserving passenger
                     counting in public transportation systems. Unlike traditional camera-based approaches, the Wi-Fi CSI
@@ -78,7 +78,7 @@
             <div class="methodology-content">
                 <div class="methodology-text">
                     <h3>Methodology</h3>
-                    <p>The FusionCount dataset was collected using Wi-Fi devices installed in the upper deck of
+                    <p>The RiderCount dataset was collected using Wi-Fi devices installed in the upper deck of
                         double-decker buses operating on various routes in Hong Kong. Channel State Information (CSI)
                         data was captured across different times of day, passenger densities, and bus operating
                         conditions to ensure diversity.</p>
@@ -120,7 +120,7 @@
 
             <div class="system-content">
                 <div class="system-description">
-                    <p>The FusionCount system uses strategically placed Wi-Fi devices to capture Channel State
+                    <p>The RiderCount system uses strategically placed Wi-Fi devices to capture Channel State
                         Information (CSI) data in the upper deck of double-decker buses. The system consists of:</p>
                     <ul class="system-components">
                         <li><strong>Wi-Fi Transmitters/Receivers</strong>: Capture CSI data as signals propagate through
@@ -153,18 +153,14 @@
                 <div class="dataset-stats">
                     <div class="stat-box">
                         <h3>CSI Samples</h3>
-                        <p class="stat-number">XX,XXX</p>
+                        <p class="stat-number">3,230,000</p>
                     </div>
                     <div class="stat-box">
-                        <h3>Recording Hours</h3>
-                        <p class="stat-number">XXX</p>
+                        <h3>Max No. People</h3>
+                        <p class="stat-number">20</p>
                     </div>
                     <div class="stat-box">
-                        <h3>Annotations</h3>
-                        <p class="stat-number">XX,XXX</p>
-                    </div>
-                    <div class="stat-box">
-                        <h3>Bus Routes</h3>
+                        <h3>Max No. Bus Routes</h3>
                         <p class="stat-number">5</p>
                     </div>
                 </div>
@@ -174,11 +170,10 @@
                     <li><strong>Real-world conditions</strong>: Captured in actual double-decker buses in Hong Kong</li>
                     <li><strong>Diverse scenarios</strong>: Various bus conditions, passenger densities, and seating
                         arrangements</li>
-                    <li><strong>Comprehensive annotations</strong>: Includes passenger positions and counts</li>
-                    <li><strong>Privacy-preserving</strong>: Using CSI data derived from Wi-Fi signals to protect
-                        passenger identity</li>
                     <li><strong>Multiple collection periods</strong>: Data collected across different dates in 2023 and
                         2025</li>
+                    <li><strong>Privacy-preserving</strong>: Using CSI data derived from Wi-Fi signals to protect
+                        passenger identity</li>
                 </ul>
             </div>
 
@@ -267,8 +262,8 @@
                         <img src="images/9people.png" alt="Medium occupancy scenario with 9 passengers">
                     </div>
                     <div class="example-card-content">
-                        <h3>Medium Occupancy (9 Passengers)</h3>
-                        <p>This scenario features 9 passengers in the upper deck of a double-decker bus, representing a
+                        <h3>Medium Occupancy</h3>
+                        <p>This scenario features around 9 passengers in the upper deck of a double-decker bus, representing a
                             medium occupancy case. The passengers are distributed throughout the seating area, providing
                             varied signal paths for the Wi-Fi CSI data. This distribution allows algorithms to learn
                             patterns associated with medium passenger density.</p>
@@ -280,8 +275,8 @@
                         <img src="images/20people.png" alt="High occupancy scenario with 20 passengers">
                     </div>
                     <div class="example-card-content">
-                        <h3>High Occupancy (20 Passengers)</h3>
-                        <p>This scenario features 20 passengers in the upper deck of a double-decker bus, representing a
+                        <h3>High Occupancy</h3>
+                        <p>This scenario features around 20 passengers in the upper deck of a double-decker bus, representing a
                             high occupancy case that challenges counting algorithms. Wi-Fi CSI patterns change
                             significantly as more passengers enter the bus, providing rich data for model training and
                             evaluation.</p>
@@ -306,47 +301,42 @@
                     <thead>
                         <tr>
                             <th>Method</th>
-                            <th>Precision</th>
-                            <th>Recall</th>
+                            <th>Accuracy</th>
                             <th>F1-Score</th>
-                            <th>MAE</th>
+                            <th>GFLOPs</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>CSI-CNN</td>
-                            <td>0.82</td>
-                            <td>0.79</td>
-                            <td>0.80</td>
-                            <td>2.4</td>
+                            <td>Direct Prob Avg</td>
+                            <td>90.99</td>
+                            <td>90.98</td>
+                            <td>3.44</td>
                         </tr>
                         <tr>
-                            <td>CSI-LSTM</td>
-                            <td>0.87</td>
-                            <td>0.85</td>
-                            <td>0.86</td>
-                            <td>1.8</td>
+                            <td>Re-weighted CSI Prob Avg</td>
+                            <td>91.45</td>
+                            <td>91.39</td>
+                            <td>3.44</td>
                         </tr>
                         <tr>
-                            <td>DeepSense</td>
-                            <td>0.89</td>
-                            <td>0.88</td>
-                            <td>0.88</td>
-                            <td>1.5</td>
+                            <td>CSI Feature Concatenation Training</td>
+                            <td>92.59</td>
+                            <td>92.49</td>
+                            <td>3.40</td>
                         </tr>
                         <tr>
-                            <td>FreqDense</td>
-                            <td>0.84</td>
-                            <td>0.83</td>
-                            <td>0.83</td>
-                            <td>1.9</td>
+                            <td>Adaptive RSSI-weighted CSI Feature Concatenation</td>
+                            <td>94.86</td>
+                            <td>94.83</td>
+                            <td>3.41</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
             <div class="benchmark-notes">
-                <p><strong>MAE</strong>: Mean Absolute Error in passenger count</p>
+                <p><strong>GFLOPs</strong>: Giga floating point of operations.</p>
                 <p>For more details on benchmark methodology and evaluation metrics, please refer to our paper.</p>
             </div>
         </div>
