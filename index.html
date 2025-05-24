@@ -66,11 +66,10 @@
 
             <div class="abstract-content">
                 <h3>Abstract</h3>
-                <p>The CountFi dataset supports research on RSSI-assisted CSI-based passenger counting with multiple
-                    Wi-Fi receivers in the upper-decker of double-decker buses in Hong Kong. It provides annotated Wi-Fi
-                    CSI data to develop and evaluate sensing algorithms for accurate, privacy-preserving passenger
-                    counting in public transportation systems. Unlike traditional camera-based approaches, the Wi-Fi CSI
-                    method
+                <p>The CountFi dataset supports research on CSI-based passenger counting with both single and multiple
+                    Wi-Fi receivers in the public transportation systems. It provides annotated Wi-Fi CSI data to
+                    develop and evaluate sensing algorithms for accurate, privacy-preserving passenger counting in
+                    public transportation systems. Unlike traditional camera-based approaches, the Wi-Fi CSI method
                     offers enhanced privacy protection while maintaining accurate counting capabilities through learning
                     of signal propagation characteristics affected by passenger presence and fidgeting.</p>
             </div>
@@ -87,8 +86,10 @@
                         <div class="methodology-feature">
                             <h4><i class="fas fa-microchip"></i> CSI Processing</h4>
                             <p>The raw Wi-Fi CSI data was processed to extract features that correlate with passenger
-                                presence and fidgeting. The signal propagation characteristics change based on the number
-                                of passengers and their distribution in the bus, allowing for passenger counting estimation.</p>
+                                presence and fidgeting. The signal propagation characteristics change based on the
+                                number
+                                of passengers and their distribution in the bus, allowing for passenger counting
+                                estimation.</p>
                         </div>
 
                         <div class="methodology-feature">
@@ -126,7 +127,8 @@
                         <li><strong>Wi-Fi Transmitters/Receivers</strong>: Capture CSI data as signals propagate through
                             the bus environment</li>
                         <li><strong>Data Collection Units</strong>: Process and store raw CSI measurements</li>
-                        <li><strong>Feature Fusion Module</strong>: Leverage RSSI features to enhance the accuracy of passenger counting
+                        <li><strong>Feature Fusion Module</strong>: Leverage RSSI features to enhance the accuracy of
+                            passenger counting
                         </li>
                         <li><strong>Passenger Count Estimation</strong>: Uses deep learning models to estimate the
                             number of passengers</li>
@@ -213,7 +215,8 @@
                                 <li><strong>Collection locations:</strong> Front, middle, and end sections of the upper
                                     deck</li>
                                 <li><strong>File naming convention:</strong> Files are denoted with suffix
-                                    <code>_xm</code> (where x represents relevant sections, for example, <code>_fm</code> represents data collected from front section of the upper deck)
+                                    <code>_xm</code> (where x represents relevant sections, for example,
+                                    <code>_fm</code> represents data collected from front section of the upper deck)
                                 </li>
                                 <li><strong>Purpose:</strong> To capture CSI variations under dynamic conditions with
                                     passenger movement</li>
@@ -263,7 +266,8 @@
                     </div>
                     <div class="example-card-content">
                         <h3>Medium Occupancy</h3>
-                        <p>This scenario features around 9 passengers in the upper deck of a double-decker bus, representing a
+                        <p>This scenario features around 9 passengers in the upper deck of a double-decker bus,
+                            representing a
                             medium occupancy case. The passengers are distributed throughout the seating area, providing
                             varied signal paths for the Wi-Fi CSI data. This distribution allows algorithms to learn
                             patterns associated with medium passenger density.</p>
@@ -276,7 +280,8 @@
                     </div>
                     <div class="example-card-content">
                         <h3>High Occupancy</h3>
-                        <p>This scenario features around 20 passengers in the upper deck of a double-decker bus, representing a
+                        <p>This scenario features around 20 passengers in the upper deck of a double-decker bus,
+                            representing a
                             high occupancy case that challenges counting algorithms. Wi-Fi CSI patterns change
                             significantly as more passengers enter the bus, providing rich data for model training and
                             evaluation.</p>
@@ -397,7 +402,8 @@
                 <ol>
                     <li>Use the dataset for non-commercial research purposes only</li>
                     <li>Properly cite our paper in any publications that use this dataset</li>
-                    <li>Share or redistribute the dataset only under the same license terms (CC BY-NC 4.0) with proper attribution</li>
+                    <li>Share or redistribute the dataset only under the same license terms (CC BY-NC 4.0) with proper
+                        attribution</li>
                 </ol>
             </div>
         </div>
@@ -432,7 +438,9 @@
             </div>
 
             <div class="acknowledgement-content">
-                <p>This work was supported in part by the Smart Traffic Fund (Project No. PSRI/31/2202/PR) established under the Transport Department of the Hong Kong Special Administrative Region (HKSAR), China. We thank all volunteers for their participations.</p>
+                <p>This work was supported in part by the Smart Traffic Fund (Project No. PSRI/31/2202/PR) established
+                    under the Transport Department of the Hong Kong Special Administrative Region (HKSAR), China. We
+                    thank all volunteers for their participations.</p>
             </div>
         </div>
     </section>
@@ -446,7 +454,9 @@
 
             <div class="license-content">
                 <p><strong>Attribution-NonCommercial 4.0 International</strong></p>
-                <p>This dataset is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. You are free to share and adapt the material for non-commercial purposes, provided you give appropriate credit.</p>
+                <p>This dataset is licensed under the Creative Commons Attribution-NonCommercial 4.0 International
+                    License. You are free to share and adapt the material for non-commercial purposes, provided you give
+                    appropriate credit.</p>
             </div>
         </div>
     </section>
