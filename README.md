@@ -1,7 +1,7 @@
 <!--
  * @Author: Guo Jingtao
  * @Date: 2025-05-20 13:24:42
- * @LastEditTime: 2025-05-22 22:49:21
+ * @LastEditTime: 2025-05-25 14:55:18
  * @LastEditors: Guo Jingtao
  * @Description: A dataset for passenger counting in the upper-decker of a double-decker bus in Hong Kong
  * @FilePath: /CountFi/README.md
@@ -66,12 +66,14 @@ Visit our [project website](https://GuoJingtao-1997.github.io/CountFi) for more 
 If you use the CountFi dataset in your research, please cite our paper:
 
 ```
-@article{countFi2023,
-  title={CountFi: A Dataset for Passenger Counting in the Upper-Decker of a Double-Decker Bus in Hong Kong},
-  author={[Author Names]},
-  journal={arXiv preprint arXiv:2410.11400},
-  year={2023}
-}
+@inproceedings{guo2025rssi,
+                    title={RSSI-Assisted CSI-Based Passenger Counting with Multiple Wi-Fi Receivers},
+                    author={Guo, Jingtao and Zhuang, Wenhao and Mao, Yuyi and Ho, Ivan Wang-Hei},
+                    booktitle={2025 IEEE Wireless Communications and Networking Conference (WCNC)},
+                    pages={1--6},
+                    year={2025},
+                    organization={IEEE}
+                  }
 ```
 
 ## License
