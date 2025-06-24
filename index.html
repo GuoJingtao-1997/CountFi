@@ -67,11 +67,10 @@
 
             <div class="abstract-content">
                 <h3>Abstract</h3>
-                <p>The CountFi dataset supports research on RSSI-assisted CSI-based passenger counting with multiple
-                    Wi-Fi receivers in the upper-decker of double-decker buses in Hong Kong. It provides annotated Wi-Fi
-                    CSI data to develop and evaluate sensing algorithms for accurate, privacy-preserving passenger
-                    counting in public transportation systems. Unlike traditional camera-based approaches, the Wi-Fi CSI
-                    method
+                <p>The CountFi dataset supports research on CSI-based passenger counting with both single and multiple
+                    Wi-Fi receivers in the public transportation systems. It provides annotated Wi-Fi CSI data to
+                    develop and evaluate sensing algorithms for accurate, privacy-preserving passenger counting in
+                    public transportation systems. Unlike traditional camera-based approaches, the Wi-Fi CSI method
                     offers enhanced privacy protection while maintaining accurate counting capabilities through learning
                     of signal propagation characteristics affected by passenger presence and fidgeting.</p>
             </div>
@@ -133,7 +132,7 @@
                             passenger counting
                         </li>
                         <li><strong>Passenger Count Estimation</strong>: Uses deep learning models to estimate the
-                            number of passengers</li>
+                            number of passengers and visualize the results in a web interface</li>
                     </ul>
                     <p>The entire system operates in real-time, providing privacy-preserving passenger counts without
                         capturing any personally identifiable information.</p>
@@ -357,7 +356,8 @@
             </div>
 
             <p>The CountFi dataset is available for research purposes. Each collection period offers unique
-                characteristics as described in the Dataset Structure section.</p>
+                characteristics as described in the Dataset Structure section. Here we provide raw dataset, allowing
+                researchers to process the data as they wish.</p>
 
             <div class="dataset-links">
                 <h3>Available CSI Datasets (PCAP Format)</h3>
@@ -366,7 +366,7 @@
                         <span class="dataset-date">February 6-7, 2025</span>
                         <div class="dataset-description">
                             <p>Stationary scenario data with suffix <code>_stop</code> collected from front, middle, and
-                                end sections.</p>
+                                end sections. Each PCAP file contains 1,000 CSI samples.</p>
                         </div>
                         <a href="https://connectpolyu-my.sharepoint.com/:u:/g/personal/23086604r_connect_polyu_hk/EaS89dNFjOVKuYAwrWiEEqoBDxUcuABAABfe_OjSRMAcZA?e=xaE56y"
                             class="button" target="_blank">
@@ -377,7 +377,7 @@
                         <span class="dataset-date">April 8, 2025</span>
                         <div class="dataset-description">
                             <p>Mixed moving and stationary scenarios with suffix <code>_xm</code>, collected from
-                                multiple sections.</p>
+                                multiple sections. Each PCAP file contains 1,000 CSI samples.</p>
                         </div>
                         <a href="https://connectpolyu-my.sharepoint.com/:u:/g/personal/23086604r_connect_polyu_hk/EReOZ6t6Wq5NpfmvGpwF06cBsPgZKqqrZBTJVJj_pyMooQ?e=ueGV6h"
                             class="button" target="_blank">
@@ -388,7 +388,7 @@
                         <span class="dataset-date">June 13, 2023</span>
                         <div class="dataset-description">
                             <p>Controlled environment data with bus engine off for minimal interference and cleaner
-                                signal patterns.</p>
+                                signal patterns. Each PCAP file contains 12,000 CSI samples.</p>
                         </div>
                         <a href="https://connectpolyu-my.sharepoint.com/:u:/g/personal/23086604r_connect_polyu_hk/ER27UzFLf4BEgBmnlztErOoB6b_WkkxjAurbbOGZvSiCKg?e=XxKNXY"
                             class="button" target="_blank">
